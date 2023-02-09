@@ -123,6 +123,7 @@ body {
   color: red;
 }
 .content__middl--text p:last-child::first-letter {
+  font-size: 30px;
   color: red;
 }
 .content__bottom--form-batton {
