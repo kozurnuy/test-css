@@ -75,36 +75,76 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------------------------------------------*/
 body {
-  padding: 30PX;
-  background: #89a8ac;
+  background-color: #e8e8e8;
+  margin: 30px;
 }
 
-.text {
-  font-size: 24PX;
-  line-height: 33PX;
+.content__top--list li {
+  color: #273d46;
+  font-size: 20px;
+  line-height: 36px;
+}
+.content__top--list-1 {
   margin: 0 0 30px 0;
 }
-
-.text::first-line {
-  color: green;
+.content__top--list-1 li:nth-child(1) {
+  text-decoration: line-through;
+  color: #273d46;
 }
-
-.text::first-letter {
-  color: rgb(233, 6, 6);
-  font-size: 50px;
+.content__top--list-1 li:nth-child(2) {
+  color: #273d46;
+  font-weight: 700;
 }
-
-.list li {
-  font-size: 24px;
-  margin: 0 0 20px 0;
+.content__top--list-1 li:nth-child(3) {
+  color: #273d46;
+  font-style: italic;
 }
-
-.list li::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.content__top--list-1 li:nth-child(4) {
+  color: #273d46;
+  text-transform: uppercase;
+}
+.content__top--list-2 li:hover {
+  color: red;
+}
+.content__top li::before {
+  content: " ";
+  background: url("../IMG/check icon.svg") 0 0 no-repeat;
   display: inline-block;
-  background: #d41515;
-  margin: 0 10px 0px 0;
+  width: 25px;
+  height: 19px;
+}
+.content__middl {
+  margin: 30px 0 30px 0;
+}
+.content__middl--text p {
+  margin: 0 0 30px 0;
+}
+.content__middl--text p:first-child::first-line {
+  color: red;
+}
+.content__middl--text p:last-child::first-letter {
+  color: red;
+}
+.content__bottom--form-batton {
+  filter: drop-shadow(0px 6px 20px rgba(128, 183, 179, 0.54));
+  display: inline-block;
+  background-color: #80b7b3;
+  border-radius: 50px;
+  padding: 0 26px 0 21px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Arial";
+}
+.content__bottom--form-batton span {
+  background: url("../IMG/Shape 3.png") right no-repeat;
+  padding: 0 26px 0 0;
+}
+.content__bottom--form-batton:hover {
+  background-color: #3a5856;
+}
+.content__bottom--form-batton:active {
+  background-color: #818181;
 }
